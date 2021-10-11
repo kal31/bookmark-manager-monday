@@ -4,7 +4,7 @@ As a user
 to see what bookmarks i have available 
 i would like to view a list of bookmarks
 
-Domain model 
+To view Domain model click [here](bookmark_manager_1.png)
 
 CLASS "BookMarks" as Bookmarks:
 -"name"
