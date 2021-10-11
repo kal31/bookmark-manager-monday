@@ -13,12 +13,10 @@ class BookmarkManager < Sinatra::Base
 
 
   get '/bookmarks' do
-    $book_mark_1 = Bookmarks.new
-    @bookmark_list = $book_mark_1.create_bookmark("BBC - https://www.bbc.co.uk/news")
-    
-
-    erb :bookmarks
+    @bookmarks = Bookmark.all
+    erb :'bookmarks/index'
   end
+          
 
   run! if app_file == $0
 end
